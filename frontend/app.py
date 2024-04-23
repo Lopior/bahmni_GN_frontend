@@ -93,7 +93,7 @@ def get_ges_data(id_ges):
         print("Error al notificar GES:", str(e))
         return jsonify({'cod': 'error', 'message': 'error al notificar GES'+str(e)})
     
-@app.route('/notificacion/notificacionges', methods=['POST'])
+@app.route('/notificacionges', methods=['POST'])
 def post_ges_data():
     data = dict(request.form)
     # Hacer la solicitud POST al backend
