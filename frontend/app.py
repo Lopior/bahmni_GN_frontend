@@ -11,7 +11,6 @@ from weasyprint import HTML
 #app = Flask(__name__)
 app = Flask(__name__, static_url_path='/static')
 
-
 #se agrega esta especie de middleware para que funcione con el reverse proxy
 
 #class ReverseProxied(object):
@@ -33,8 +32,6 @@ app = Flask(__name__, static_url_path='/static')
         #print("Modified PATH_INFO:", environ.get('PATH_INFO'))
         
         #return self.app(environ, start_response)
-
-
 
 #app.wsgi_app = ReverseProxied(app.wsgi_app)
 
