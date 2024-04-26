@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>FORMULARIO DE CONSTANCIA INFORMACIÓN AL PACIENTE GES</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/notificacion/css/style.css') }}">
+    <! --<link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}"> -->
+    <link rel="stylesheet" href="/notificacion/static/css/style.css">
 </head>
 <body>
     <form action="/notificacion/notificacionges" method="post">
         <div class="container-fluid" >
             <div class="row">
                 <div class="col-md-12 centrado">
-                    <img src="{{ url_for('static', filename='/notificacion/img/channels-15_bg_header.png') }}" alt="img_header"><br>
+                    <img src="{{ url_for('static', filename='img/channels-15_bg_header.png') }}" alt="img_header"><br>
+                    <link rel="stylesheet" href="static/css/style.css">
                 </div>
             </div>
         </div>
